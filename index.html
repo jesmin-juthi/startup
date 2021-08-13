@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="designer and developer" content="Jesmin Juthi">
+    <meta name="description" content="Website Description">
+    <meta name="keywords" content="Website keywords">
+    <!-- Website Title -->
+    <title>Starter Template</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- Fonts -->
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- CSS Here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- 
+    =====================================================
+    Start Header Section 
+    =====================================================
+	-->
+
+
+
+
+
+    <!-- 
+    =====================================================
+    End Header Section 
+    =====================================================
+	-->
+
+
+    <!-- 
+    =====================================================
+    Start  Section 
+    =====================================================
+    -->
+    <section class="-section">
+        <div class="container">
+            <!----- Start row ----->
+            <div class="row">
+
+            </div>
+            <!------ End row ------>
+        </div>
+    </section>
+    <!-- 
+    =====================================================
+    End  Section 
+    =====================================================
+    -->
+
+
+    <!-- 
+    =====================================================
+    Start Footer Section 
+    =====================================================
+	-->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </footer>
+    <!-- 
+    =====================================================
+    End Footer Section 
+    =====================================================
+	-->
+
+    <!-- 
+    ================================
+    Back To Top Btn
+    ================================
+	-->
+    <button type="button" id="scroll-up-btn" title="Go to top"
+        class="transition-2 d-flex align-items-center justify-content-center rounded">
+        <img src="assets/svg-icon/arrow-up.svg" alt="arrow-up">
+    </button>
+    <!-- 
+    ================================
+    Back To Top Btn
+    ================================
+	-->
+
+
+    <!-- JS Here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="assets/js/app.js"></script>
+    <script>
+        /*===== SCROLL BACK TO TOP BTN =====*/
+        var mybutton = document.getElementById('scroll-up-btn');
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 50 ||
+                document.documentElement.scrollTop > 50
+            ) {
+                mybutton.style.opacity = '1';
+            } else {
+                mybutton.style.opacity = '0';
+            }
+        }
+        mybutton.addEventListener('click', topFunction);
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    /* font-size: 16px; */
+    line-height: 1.8;
+    /* letter-spacing: 1px; */
+    font-style: normal;
+    font-weight: normal;
+    overflow-x: hidden;
+    letter-spacing: .1rem;
+}
+
+
+::-moz-selection {
+    background: var(--color-00);
+    color: var(--secondary-color);
+}
+
+::selection {
+    background: var(--color-00);
+    color: var(--secondary-color);
+}
+
+::-webkit-scrollbar {
+    width: .7rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-00);
+    height: 6rem;
+}
+
+/* 
+=================================
+Basic Setup
+=================================
+*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a,
+span,
+label {
+    display: inline-block;
+}
+
+a,
+a:focus {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+button:focus,
+input:focus,
+textarea:focus {
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+=====================================
+Variables
+=====================================
+*/
+:root {
+    --size-50: 5rem;
+    --size-30: 3rem;
+    --size-25: 2.5rem;
+    --size-18: 1.8rem;
+    --size-16: 1.6rem;
+    --primary-color: #3A3D3E;
+    --secondary-color: #FFFFFF;
+    --color-00: #00AA55;
+    --color-99: #0099FF;
+}
+
+/* 
+=================================
+BG Color
+=================================
+*/
+
+.bg-clr-ff {
+    background: #fff;
+}
+
+.bg-clr-00 {
+    background: #000;
+}
+
+.bg-color-00 {
+    background: var(--color-00);
+}
+
+.bg-color-99 {
+    background: var(--color-99);
+}
+
+/* 
+=================================
+Font Color
+=================================
+*/
+
+.txt-clr-ff {
+    color: #fff;
+}
+
+.txt-clr-00 {
+    color: #000;
+}
+
+/* OR */
+
+.text-color-3a {
+    color: var(--primary-color);
+}
+
+.text-color-ff {
+    color: var(--secondary-color);
+}
+
+
+/* 
+=================================
+Font Size
+=================================
+*/
+
+.fz-14 {
+    font-size: 14px;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+/* OR */
+
+.font-size-50 {
+    font-size: var(--size-50);
+}
+
+.font-size-30 {
+    font-size: var(--size-30);
+}
+
+
+/* 
+=========================================
+Start  Section
+=========================================
+*/
+
+
+
+/* 
+=========================================
+End  Section
+=========================================
+*/
+
+
+
+
+
+/* 
+===============================
+Back to top Btn
+===============================
+*/
+#scroll-up-btn {
+    opacity: 0;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 99999;
+    background: var(--color-99);
+    width: 4.5rem;
+    height: 4.5rem;
+    -webkit-animation: myBtn 3.5s infinite linear;
+    animation: myBtn 3.5s infinite linear
+}
+
+#scroll-up-btn:hover {
+    -webkit-transform: translateY(-.7rem);
+    -ms-transform: translateY(-.7rem);
+    transform: translateY(-.7rem);
+}
+
+@-webkit-keyframes myBtn {
+    0% {
+        right: 3rem;
+        bottom: 4rem;
+    }
+
+    25% {
+        bottom: 2rem;
+        right: 3rem;
+    }
+
+    50% {
+        right: 3rem;
+        bottom: 4rem;
+    }
+
+    75% {
+        bottom: 2rem;
+        right: 3rem;
+    }
+
+    100% {
+        right: 3rem;
+        bottom: 4rem;
+    }
+}
+
+@keyframes myBtn {
+    0% {
+        right: 3rem;
+        bottom: 4rem;
+    }
+
+    25% {
+        bottom: 2rem;
+        right: 3rem;
+    }
+
+    50% {
+        right: 3rem;
+        bottom: 4rem;
+    }
+
+    75% {
+        bottom: 2rem;
+        right: 3rem;
+    }
+
+    100% {
+        right: 3rem;
+        bottom: 4rem;
+    }
+}
